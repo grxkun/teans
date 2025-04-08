@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "src": "tea-name-service/",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "tea-name-service/$1"
+    }
+  ]
+}
